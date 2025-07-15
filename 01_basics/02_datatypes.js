@@ -138,3 +138,12 @@ console.log(id === anotherId); false
 // BigInt 
 const bigNumber = 345678901234567890n 
 console.log(typeof bigNumber) // bigint
+
+// ***************Memories in Javascript
+// There are two types of Memory in the javascript
+// Stack (Primitive), Heap(Non-primitive)
+
+let myYoutubeName = "hiteshchoudary"
+
+let anotherName = myYoutubeName
+
