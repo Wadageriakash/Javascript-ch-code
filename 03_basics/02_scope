@@ -1,0 +1,19 @@
+// Example of variable scope in JavaScript
+
+var c = 600;
+let a = 60;
+
+if (true) {
+    let a = 100
+    const b = 200
+    var c = 300
+    c = 200;
+    console.log("Inner ", a); 200
+}
+
+console.log(a); // 60
+// console.log( b); 
+console.log( c);  // 200
+
+
+
