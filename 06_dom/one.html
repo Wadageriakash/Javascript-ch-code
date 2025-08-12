@@ -16,12 +16,26 @@
         <h1 id="title"  class="heading">DOM Learning on Chai aur code
         <span style="display: none">test text</span>
         </h1>
+         <h2>Lorem ipsum dolor sit .</h2>
+        <h2>Lorem ipsum dolor sit .</h2>
+        <h2>Lorem ipsum dolor sit .</h2>
+        <h1>Lorem ipsum dolor sit .</h1>
         <p>Lorem ipsum dolor sit amet.</p>
+       <input type="password" name="" id="">
+
+       <ul>
+        <li class="list-item">One</li>
+        <li class="list-item">Two</li>
+        <li class="list-item">Three</li>
+        </ul>
+
+
     </div>
 </body>
 </html>
 
-
+<!-- DOM: Document Object Model -->
+ <!-- console.dir(document) -->
 <!-- document.getElementById('title')
 <h1 id=​"title" class=​"heading">​DOM Learning on Chai aur code​</h1>​
 
@@ -55,5 +69,43 @@ title.innerText  // 'DOM Learning on Chai aur code'
 
 title.textContent  // 'DOM Learning on Chai aur code\n        test text\n  
 
+document.getElementById('title').setAttribute('class', 'test heading') 
+
+document.querySelector('h1') // This will return the first h1 which is present in the page.
+document.querySelector('h2') // This will return the first h2 which is present in the page. same applies for all while using the querySelector.
+document.querySelector('#title') // <h1 id=​"title" class=​"heading">​…​</h1>​"DOM Learning on Chai aur code "<span style=​"display:​ none">​test text​</span>​</h1>​
+document.querySelector('.heading') // <h1 id=​"title" class=​"heading">​…​</h1>​"DOM Learning on Chai aur code "<span style=​"display:​ none">​test text​</span>​</h1>​
+document.querySelector('input[type="password"]') // <input type=​"password" name id>​
+
+document.querySelector('ul') // <ul>​…​</ul>​
+const myul = document.querySelector('ul')
+myul.querySelector('li') // <li style=​"background:​ green;​">​…​</li>​::marker​"One"</li>​
+ const turngreeen = myul.querySelector('li')
+turngreeen.style.background = "green"
+turngreeen.style.padding = "10px"
+turngreeen.innerText // 'One'
+turngreeen.innerHTML
+
+
+
+// querySelectorAll: It returns a NodeList of all elements that match the specified CSS selector(s).
+===================================================================
+* const tempLiList = document.querySelectorAll('li')
+* tempLiList[0].style.background = "green"
+* tempLiList.forEach(function (l) {
+    l.style.backgroundColor = "green"
+})
+
+
+// getElementsByClassName: It returns a live HTMLCollection of elements with the specified class name.
+===================================================================
+* const tempClassList = document.getElementsByClassName('list-item')
+* Converting HTMLCollection to Array by using Array.from()
+* const myArray = Array.from(tempClassList)
+* myArray.forEach(function (li) {
+    li.style.color = "orange"
+  })
+
+  
 
  -->
