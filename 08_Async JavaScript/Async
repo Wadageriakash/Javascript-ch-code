@@ -1,0 +1,6 @@
+<!-- * Javascript is a synchronous and single thread Language
+* execution Context: exexute one line of code at a time.
+==> Each operation wait for the last one to complete before executing.
+
+* Blocking code vs Non BLocking code: -->
+
